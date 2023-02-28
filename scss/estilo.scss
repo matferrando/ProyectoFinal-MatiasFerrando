@@ -1,9 +1,13 @@
+@font-face {
+    font-family: silenthill;
+    src: url(../fuente/SLNTHLN.TTF);
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import "variables";
 @import "imagenes";
 @import "header";
-@import "media";
 @import "nav";
+@import "media";
 
 * {
     margin: 0;
@@ -15,5 +19,5 @@
 
 body {
     background-color:#060b08;
-    font-family: 'Poppins', sans-serif;
+    font-family: silenthill;
 }

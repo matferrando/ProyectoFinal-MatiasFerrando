@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@font-face {
+  font-family: silenthill;
+  src: url(../fuente/SLNTHLN.TTF);
+}
 header {
   width: 100%;
   height: 100vh;
@@ -6,6 +10,62 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+header .texto-portada {
+  padding: 0 30px;
+  margin-top: 150px;
+  text-align: center;
+  color: black;
+}
+header .texto-portada h1 {
+  font-family: silenthill;
+  font-size: 11vh;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+header .texto-portada h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+header .texto-portada h2 span {
+  color: #c10000;
+  font-weight: 800;
+}
+header .texto-portada .botones {
+  margin-left: 40px;
+  display: flex;
+  justify-content: center;
+}
+header .texto-portada .botones .boton1 {
+  font-family: silenthill;
+  text-decoration: none;
+  font-weight: 600;
+  margin-right: 40px;
+  padding: 10px 30px;
+  background-color: #c10000;
+  color: #fff;
+  border-radius: 5px;
+}
+header .texto-portada .botones .boton1:hover {
+  background-color: #fff;
+  color: #c10000;
+  transition: 0.5s;
+}
+header .texto-portada .botones .boton2 {
+  font-family: silenthill;
+  text-decoration: none;
+  font-weight: 600;
+  margin-right: 40px;
+  padding: 10px 30px;
+  background-color: #fff;
+  color: #c10000;
+  border-radius: 5px;
+}
+header .texto-portada .botones .boton2:hover {
+  background-color: #c10000;
+  color: #fff;
+  transition: 0.5s;
 }
 
 nav {
@@ -15,11 +75,17 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+nav a {
+  text-decoration: none;
+  list-style: none;
+}
 nav .logo-img {
-  height: 9vh;
+  height: 7vh;
+  margin-left: 15px;
 }
 nav .logo-nombre {
-  height: 11vh;
+  height: 7vh;
+  margin-left: 9px;
 }
 nav .btn-bar {
   font-size: 35px;
@@ -32,14 +98,16 @@ nav .nav-menu {
   width: 100%;
   height: 0vh;
   top: 100px;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.97);
   text-align: center;
   transition: all 0.5s;
+  left: 50%;
+  transform: translateX(-50%);
 }
 nav .nav-menu li {
   display: none;
   line-height: 30px;
-  margin: 50px 0;
+  margin: 50px 0px;
   transition: all 0.5s;
 }
 nav .nav-menu li a {
@@ -50,7 +118,7 @@ nav .nav-menu li a {
   font-weight: 600;
 }
 nav .nav-menu li a:hover, nav .nav-menu li a.active {
-  color: #B60404;
+  color: #c10000;
   transition: 0.3s;
 }
 
@@ -75,7 +143,7 @@ nav .nav-menu li a:hover, nav .nav-menu li a.active {
 
 body {
   background-color: #060b08;
-  font-family: "Poppins", sans-serif;
+  font-family: silenthill;
 }
 
 /*# sourceMappingURL=estilo.css.map */

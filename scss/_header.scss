@@ -5,4 +5,71 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    .texto-portada {
+        padding: 0 30px;
+        margin-top: 150px;
+        text-align: center;
+        color: black;
+        
+
+        h1 {
+            font-family: silenthill;
+            font-size: 11vh;
+            font-weight: 800;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 40px;
+
+            span {
+                color: #c10000;
+                font-weight: 800;
+            }
+        }
+
+        .botones {
+
+            margin-left: 40px;
+            display: flex;
+            justify-content: center;
+
+            .boton1 {
+                font-family: silenthill;
+                text-decoration: none;
+                font-weight: 600;
+                margin-right: 40px;
+                padding: 10px 30px;
+                background-color: #c10000;
+                color: #fff;
+                border-radius: 5px;
+
+                &:hover {
+                    background-color: #fff;
+                    color: #c10000;
+                    transition: .5s;
+                }
+            }
+
+            .boton2 {
+                font-family: silenthill;
+                text-decoration: none;
+                font-weight: 600;
+                margin-right: 40px;
+                padding: 10px 30px;
+                background-color: #fff;
+                color: #c10000;
+                border-radius: 5px;
+
+                &:hover {
+                    background-color: #c10000;
+                    color: #fff;
+                    transition: .5s;
+                }
+            }
+        }
+    }
 }
