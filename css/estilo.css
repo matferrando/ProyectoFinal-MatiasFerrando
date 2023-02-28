@@ -3,7 +3,7 @@
   font-family: silenthill;
   src: url(../fuente/SLNTHLN.TTF);
 }
-header {
+.inicio {
   width: 100%;
   height: 100vh;
   background-image: url(../imgs/portada.jpg);
@@ -11,33 +11,35 @@ header {
   background-position: center;
   background-size: cover;
 }
-header .texto-portada {
+.inicio .texto-portada {
   padding: 0 30px;
   margin-top: 150px;
   text-align: center;
   color: black;
 }
-header .texto-portada h1 {
+.inicio .texto-portada h1 {
   font-family: silenthill;
   font-size: 11vh;
   font-weight: 800;
   margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
-header .texto-portada h2 {
+.inicio .texto-portada h2 {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
-header .texto-portada h2 span {
+.inicio .texto-portada h2 span {
   color: #c10000;
   font-weight: 800;
 }
-header .texto-portada .botones {
+.inicio .texto-portada .botones {
   margin-left: 40px;
   display: flex;
   justify-content: center;
 }
-header .texto-portada .botones .boton1 {
+.inicio .texto-portada .botones .boton1 {
   font-family: silenthill;
   text-decoration: none;
   font-weight: 600;
@@ -47,12 +49,12 @@ header .texto-portada .botones .boton1 {
   color: #fff;
   border-radius: 5px;
 }
-header .texto-portada .botones .boton1:hover {
+.inicio .texto-portada .botones .boton1:hover {
   background-color: #fff;
   color: #c10000;
   transition: 0.5s;
 }
-header .texto-portada .botones .boton2 {
+.inicio .texto-portada .botones .boton2 {
   font-family: silenthill;
   text-decoration: none;
   font-weight: 600;
@@ -62,10 +64,62 @@ header .texto-portada .botones .boton2 {
   color: #c10000;
   border-radius: 5px;
 }
-header .texto-portada .botones .boton2:hover {
+.inicio .texto-portada .botones .boton2:hover {
   background-color: #c10000;
   color: #fff;
   transition: 0.5s;
+}
+
+.header-personajes {
+  width: 100%;
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../imgs/personajes.jpg);
+}
+.header-personajes .texto-portada {
+  padding: 0 30px;
+  text-align: center;
+  color: #fff;
+}
+.header-personajes .texto-portada h1 {
+  font-family: silenthill;
+  font-size: 7vh;
+  font-weight: 400;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+.header-personajes .texto-portada h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.header-juegos {
+  width: 100%;
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../imgs/heather.jpg);
+}
+.header-juegos .texto-portada {
+  padding: 0 30px;
+  text-align: center;
+  color: #fff;
+}
+.header-juegos .texto-portada h1 {
+  font-family: silenthill;
+  font-size: 7vh;
+  font-weight: 400;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+.header-juegos .texto-portada h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
 nav {
@@ -82,16 +136,22 @@ nav a {
 nav .logo-img {
   height: 7vh;
   margin-left: 15px;
+  filter: drop-shadow(2px 1px 3px black);
 }
 nav .logo-nombre {
   height: 7vh;
   margin-left: 9px;
+  filter: drop-shadow(2px 1px 3px black);
 }
 nav .btn-bar {
   font-size: 35px;
   color: black;
   margin-right: 25px;
   cursor: pointer;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+nav .btn-blanco {
+  color: #fff;
 }
 nav .nav-menu {
   position: fixed;
