@@ -9,7 +9,7 @@ nav {
     text-decoration: none;
     list-style: none;
   }
-  
+
   .logo-img {
     height: 7vh;
     margin-left: 15px;
@@ -24,16 +24,15 @@ nav {
 
   .btn-bar {
     font-size: 35px;
-    color: black;
+    color: $negro;
     margin-right: 25px;
     cursor: pointer;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
-    
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+
   }
+
   .btn-blanco {
     color: $blanco;
-    
-    
   }
 
   .nav-menu {
@@ -53,26 +52,27 @@ nav {
       line-height: 30px;
       margin: 50px 0px;
       transition: all .5s;
-      
+
 
 
       a {
-        color: $blanco;
+        color: $negro;
         font-size: 16px;
         text-transform: uppercase;
         text-decoration: none;
         font-weight: 600;
-        
-                
-        &:hover,
-        &.active {
-          color: $colorsh;
-          transition: .3s;
-        }
+
       }
 
     }
 
+  }
+  .blanco {
+    li {
+      a {
+        color: $blanco;
+      }
+    }
   }
 }
 
@@ -80,14 +80,21 @@ nav {
   display: none;
 }
 
-#check:checked ~ .nav-menu {
+#check:checked~.nav-menu {
   height: 100vh;
 
   li {
     display: block;
-    
-    
+
+    a {
+      color: $blanco;
+
+      &:hover,
+      &.active {
+        color: $colorsh;
+        transition: .3s;
+      }
+    }
+
   }
-
 }
-

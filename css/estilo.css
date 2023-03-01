@@ -19,7 +19,7 @@
 }
 .inicio .texto-portada h1 {
   font-family: silenthill;
-  font-size: 11vh;
+  font-size: 10vh;
   font-weight: 800;
   margin-bottom: 30px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
@@ -189,7 +189,7 @@ nav .logo-nombre {
 }
 nav .btn-bar {
   font-size: 35px;
-  color: black;
+  color: #000000;
   margin-right: 25px;
   cursor: pointer;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
@@ -215,15 +215,14 @@ nav .nav-menu li {
   transition: all 0.5s;
 }
 nav .nav-menu li a {
-  color: #fff;
+  color: #000000;
   font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 600;
 }
-nav .nav-menu li a:hover, nav .nav-menu li a.active {
-  color: #c10000;
-  transition: 0.3s;
+nav .blanco li a {
+  color: #fff;
 }
 
 #check {
@@ -236,7 +235,68 @@ nav .nav-menu li a:hover, nav .nav-menu li a.active {
 #check:checked ~ .nav-menu li {
   display: block;
 }
+#check:checked ~ .nav-menu li a {
+  color: #fff;
+}
+#check:checked ~ .nav-menu li a:hover, #check:checked ~ .nav-menu li a.active {
+  color: #c10000;
+  transition: 0.3s;
+}
 
+@media screen and (min-width: 768px) {
+  .inicio .texto-portada h1 {
+    font-size: 13vh;
+  }
+  .inicio .texto-portada h2 {
+    font-size: 27px;
+  }
+  .inicio .texto-portada .botones .boton1 {
+    font-weight: 800;
+    padding: 15px 40px;
+  }
+  .inicio .texto-portada .botones .boton2 {
+    font-weight: 800;
+    padding: 15px 40px;
+  }
+  .header-sec .texto-portada h1 {
+    font-size: 8vh;
+  }
+  nav .logo-img {
+    height: 9vh;
+    margin-left: 18px;
+  }
+  nav .logo-nombre {
+    height: 9vh;
+    margin-left: 9px;
+  }
+  nav .black {
+    color: black;
+  }
+  nav .btn-bar {
+    display: none;
+  }
+  nav .nav-menu {
+    top: 0;
+    background: none;
+    transition: none;
+    text-align: right;
+    margin-right: 50px;
+  }
+  nav .nav-menu li {
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 15px;
+    transition: none;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  }
+  nav .nav-menu li a {
+    font-size: 17px;
+  }
+  nav .nav-menu li a:hover, nav .nav-menu li a.active {
+    color: #c10000;
+    transition: 0.3s;
+  }
+}
 * {
   margin: 0;
   padding: 0;

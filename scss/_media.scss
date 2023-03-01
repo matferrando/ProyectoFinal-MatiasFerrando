@@ -1,0 +1,85 @@
+@media screen and (min-width: 768px) {
+    .inicio {
+        .texto-portada {
+            h1 {
+                font-size: 13vh;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            .botones {
+                .boton1 {
+                    font-weight: 800;
+                    padding: 15px 40px;
+                }
+
+                .boton2 {
+                    font-weight: 800;
+                    padding: 15px 40px;
+                }
+            }
+
+        }
+    }
+
+    .header-sec {
+        .texto-portada {
+            h1 {
+                font-size: 8vh;
+            }
+        }
+    }
+
+
+    nav {
+        .logo-img {
+            height: 9vh;
+            margin-left: 18px;
+        }
+
+        .logo-nombre {
+            height: 9vh;
+            margin-left: 9px;
+        }
+
+        .black {
+            color: black;
+        }
+
+        .btn-bar {
+            display: none;
+        }
+
+        .nav-menu {
+
+
+            top: 0;
+            background: none;
+            transition: none;
+            text-align: right;
+            margin-right: 50px;
+
+            li {
+                display: inline-block;
+                line-height: 100px;
+                margin: 0 15px;
+                transition: none;
+                text-shadow: $sombratexto;
+
+                a {
+                    font-size: 17px;
+
+                    &:hover,
+                    &.active {
+                        color: $colorsh;
+                        transition: .3s;
+                    }
+
+
+                }
+            }
+        }
+    }
+}
