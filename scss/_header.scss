@@ -80,7 +80,7 @@
 
 .header-personajes {
     @include tamañoheader;
-    background-image: url(../imgs/personajes.jpg);
+    background-image: url(../imgs/sh2.jpg);
 
     .texto-portada {
         @include header-seccion;
@@ -89,10 +89,26 @@
 }
 .header-juegos {
     @include tamañoheader;
-    background-image: url(../imgs/heather.jpg);
+    background-image: url(../imgs/homecoming.jpg);
 
     .texto-portada {
         @include header-seccion;
     }
 
+}
+.header-historia {
+    @include tamañoheader;
+    background-image: url(../imgs/historia.jpg);
+
+    .texto-portada {
+        @include header-seccion;
+    }
+}
+.header-arte {
+    @include tamañoheader;
+    background-image: url(../imgs/frio.jpg);
+
+    .texto-portada {
+        @include header-seccion;
+    }
 }

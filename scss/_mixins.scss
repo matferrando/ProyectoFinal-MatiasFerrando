@@ -1,6 +1,6 @@
 @mixin tamañoheader {
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -8,27 +8,20 @@
 
 @mixin header-seccion {
     padding: 0 30px;
-        text-align: center;
-        color: $blanco;
+    text-align: center;
+    color: $blanco;
 
 
-        h1 {
-            font-family: silenthill;
-            font-size: 7vh;
-            font-weight: 400;
-            text-shadow: $sombratexto;
+    h1 {
+        font-family: silenthill;
+        font-size: 6vh;
+        font-weight: 400;
+        text-shadow: $sombratexto;
+    }
 
+    span {
+        color: $colorsh;
+        font-weight: 800;
+    }
 
-
-        }
-
-        h2 {
-            font-size: 22px;
-            font-weight: 600;
-            margin-bottom: 40px;
-            text-shadow: $sombratexto;
-
-
-
-        }
 }
