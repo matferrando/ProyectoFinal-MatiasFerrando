@@ -10,14 +10,33 @@
             }
 
             .botones {
+
                 .boton1 {
                     font-weight: 800;
                     padding: 15px 40px;
+                    height: 50px;
+                    
+                    &:hover {
+                        font-size: 23px;
+                        padding: 20px 50px;
+                        height: 70px;
+                        transition: .3s;
+                    }
+                
+                
                 }
 
                 .boton2 {
                     font-weight: 800;
                     padding: 15px 40px;
+                    height: 50px;
+
+                    &:hover {
+                        font-size: 23px;
+                        padding: 20px 50px;
+                        height: 70px;
+                        transition: .3s;
+                    }
                 }
             }
 
@@ -37,11 +56,18 @@
         .logo-img {
             height: 9vh;
             margin-left: 18px;
+            &:hover {
+                @include logo-media;
+            }
+
         }
 
         .logo-nombre {
             height: 9vh;
             margin-left: 9px;
+            &:hover {
+                @include logo-media;
+            }
         }
 
         .black {
@@ -70,8 +96,13 @@
 
                 a {
                     font-size: 17px;
+                    transition: font-size .3s;
 
-                    &:hover,
+                    &:hover {
+                        color: $colorsh;
+                        font-size: 25px;
+                        transition: .3s;
+                    }
                     &.active {
                         color: $colorsh;
                         transition: .3s;

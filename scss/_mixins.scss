@@ -25,3 +25,8 @@
     }
 
 }
+
+@mixin logo-media {
+    height: 11vh;
+    transition: .3s;
+}

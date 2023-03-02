@@ -172,6 +172,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
 }
 nav a {
   text-decoration: none;
@@ -198,7 +200,7 @@ nav .btn-blanco {
   color: #fff;
 }
 nav .nav-menu {
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 0vh;
   top: 100px;
@@ -253,10 +255,24 @@ nav .blanco li a {
   .inicio .texto-portada .botones .boton1 {
     font-weight: 800;
     padding: 15px 40px;
+    height: 50px;
+  }
+  .inicio .texto-portada .botones .boton1:hover {
+    font-size: 23px;
+    padding: 20px 50px;
+    height: 70px;
+    transition: 0.3s;
   }
   .inicio .texto-portada .botones .boton2 {
     font-weight: 800;
     padding: 15px 40px;
+    height: 50px;
+  }
+  .inicio .texto-portada .botones .boton2:hover {
+    font-size: 23px;
+    padding: 20px 50px;
+    height: 70px;
+    transition: 0.3s;
   }
   .header-sec .texto-portada h1 {
     font-size: 8vh;
@@ -265,9 +281,17 @@ nav .blanco li a {
     height: 9vh;
     margin-left: 18px;
   }
+  nav .logo-img:hover {
+    height: 11vh;
+    transition: 0.3s;
+  }
   nav .logo-nombre {
     height: 9vh;
     margin-left: 9px;
+  }
+  nav .logo-nombre:hover {
+    height: 11vh;
+    transition: 0.3s;
   }
   nav .black {
     color: black;
@@ -291,8 +315,14 @@ nav .blanco li a {
   }
   nav .nav-menu li a {
     font-size: 17px;
+    transition: font-size 0.3s;
   }
-  nav .nav-menu li a:hover, nav .nav-menu li a.active {
+  nav .nav-menu li a:hover {
+    color: #c10000;
+    font-size: 25px;
+    transition: 0.3s;
+  }
+  nav .nav-menu li a.active {
     color: #c10000;
     transition: 0.3s;
   }
@@ -306,8 +336,10 @@ nav .blanco li a {
 }
 
 body {
-  background-color: #060b08;
+  background-color: #fff;
   font-family: silenthill;
 }
+
+/*color de fondo: #060b08;*/
 
 /*# sourceMappingURL=estilo.css.map */
