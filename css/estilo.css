@@ -294,7 +294,7 @@ nav .blanco li a {
     transition: 0.3s;
   }
   nav .black {
-    color: black;
+    color: #000000;
   }
   nav .btn-bar {
     display: none;
@@ -376,31 +376,6 @@ main .noticias .video-container iframe {
   height: 100%;
 }
 
-.asd {
-  background-image: url(../imgs/homecoming.jpg);
-  background-size: cover;
-  background-position: center center;
-  height: 300px;
-  width: 100%;
-}
-.asd .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  text-align: center;
-  color: #fff;
-  text-shadow: 1px 1px #000;
-}
-.asd h2 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-.asd p {
-  font-size: 1.5rem;
-}
-
 .footer {
   background-image: url(../imgs/footer.jpg);
   background-size: cover;
@@ -413,11 +388,16 @@ main .noticias .video-container iframe {
 }
 .footer .social a {
   color: #fff;
+  width: 40px;
+  height: 40px;
   font-size: 25px;
   display: inline-block;
   border-radius: 50%;
   margin: 0 20px;
-  opacity: 0.75;
+  opacity: 0.65;
+}
+.footer .social a:hover {
+  opacity: 1;
 }
 .footer .list {
   margin-top: 0;
@@ -435,7 +415,10 @@ main .noticias .video-container iframe {
 .footer .list li a {
   color: #fff;
   text-decoration: none;
-  opacity: 0.75;
+  opacity: 0.65;
+}
+.footer .list li a:hover {
+  opacity: 1;
 }
 .footer .copy {
   margin-top: 10px;
@@ -457,7 +440,5 @@ body {
   background-color: #060b08;
   font-family: silenthill;
 }
-
-/*color de fondo: #060b08;*/
 
 /*# sourceMappingURL=estilo.css.map */

@@ -12,7 +12,6 @@
         text-align: center;
         color: black;
 
-
         h1 {
             font-family: silenthill;
             font-size: 10vh;
@@ -34,7 +33,6 @@
         }
 
         .botones {
-
             margin-left: 40px;
             display: flex;
             justify-content: center;
@@ -49,7 +47,6 @@
                 color: $blanco;
                 border-radius: 5px;
             
-
                 &:hover {
                     background-color: $blanco;
                     color: $colorsh;
@@ -75,7 +72,6 @@
             }
         }
     }
-
 }
 
 .header-personajes {
@@ -85,8 +81,8 @@
     .texto-portada {
         @include header-seccion;
     }
-
 }
+
 .header-juegos {
     @include tamañoheader;
     background-image: url(../imgs/homecoming.jpg);
@@ -94,8 +90,8 @@
     .texto-portada {
         @include header-seccion;
     }
-
 }
+
 .header-historia {
     @include tamañoheader;
     background-image: url(../imgs/historia.jpg);
@@ -104,6 +100,7 @@
         @include header-seccion;
     }
 }
+
 .header-arte {
     @include tamañoheader;
     background-image: url(../imgs/frio.jpg);

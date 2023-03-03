@@ -1,4 +1,3 @@
-
 .footer {
   background-image: url(../imgs/footer.jpg);
   background-size: cover;
@@ -11,11 +10,17 @@
 
     a {
       color: $blanco;
+      width: 40px;
+      height: 40px;
       font-size: 25px;
       display: inline-block;
       border-radius: 50%;
       margin: 0 20px;
-      opacity: 0.75;
+      opacity: 0.65;
+
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 
@@ -27,16 +32,19 @@
     line-height: 1.6;
     margin-bottom: 0;
     text-align: center;
-      
+
     li {
       display: inline-block;
       padding: 0 15px;
-    
-    
+
       a {
         color: $blanco;
         text-decoration: none;
-        opacity: 0.75;
+        opacity: 0.65;
+        
+        &:hover {
+          opacity: 1;
+        }
       }
     }
   }
@@ -47,9 +55,5 @@
     font-size: 13px;
     color: $blanco;
     opacity: 0.45;
-
   }
-
-
-
 }
