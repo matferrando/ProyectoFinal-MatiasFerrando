@@ -9,6 +9,8 @@
 @import "header";
 @import "nav";
 @import "media";
+@import "inicio";
+@import "footer";
 
 * {
     margin: 0;
@@ -19,7 +21,7 @@
 }
 
 body {
-    background-color:$blanco;
+    background-color:#060b08;
     font-family: silenthill;
 }
 

@@ -1,0 +1,111 @@
+main {
+  .noticias {
+
+    .sombra {
+      @include sombra-foto;
+    }
+
+    h2 {
+      @include color-not;
+    }
+    .text-not{
+      @include color-not;
+      font-size: 12px;
+      text-align: justify;
+      
+      @media screen and (min-width:992px) {
+        font-size: 15px;
+        
+      }
+
+      @media screen and (min-width:1200px) {
+        font-size: 20px;
+        
+      }
+      .noticias-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+
+        img {
+          width: 100%;
+
+        }
+      }
+
+
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+    }
+    
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.asd {
+    background-image: url(../imgs/homecoming.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 300px; // o la altura deseada para la sección
+    width: 100%;
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      text-align: center;
+      color: #fff;
+      text-shadow: 1px 1px #000; // añade un sombreado al texto para que resalte más
+    }
+  
+    h2 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+  
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  
