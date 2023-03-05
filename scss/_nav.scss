@@ -4,10 +4,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   @media screen and (min-width:1200px) {
     position: sticky;
     top: 0;
-    
+
   }
 
   a {
@@ -33,7 +34,7 @@ nav {
     margin-right: 25px;
     cursor: pointer;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
-    
+
   }
 
   .btn-blanco {
@@ -50,7 +51,7 @@ nav {
     transition: all .5s;
     left: 50%;
     transform: translateX(-50%);
-    
+
     li {
       display: none;
       line-height: 30px;
@@ -82,7 +83,7 @@ nav {
 
 #check:checked~.nav-menu {
   height: 100vh;
-  
+
 
   li {
     display: block;

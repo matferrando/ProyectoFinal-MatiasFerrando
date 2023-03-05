@@ -31,6 +31,7 @@
 
 @mixin color-not {
     color: $blanco;
+
     span {
         color: $colorsh;
     }
@@ -44,6 +45,7 @@
 @mixin titulo-h2 {
     color: $blanco;
     font-size: 3rem;
+
     span {
         color: $colorsh;
     }

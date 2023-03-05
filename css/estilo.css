@@ -381,6 +381,28 @@ main .noticias .video-container iframe {
   height: 100%;
 }
 
+.juegos .accordion-button {
+  color: #fff;
+  font-size: 3vh;
+  background-color: rgba(87, 38, 38, 0.068);
+  border: none;
+}
+.juegos .accordion-item {
+  text-align: justify;
+  background-color: rgba(28, 5, 5, 0.077);
+  margin: 0 90px;
+}
+.juegos .accordion-item .accordion-body {
+  font-family: poppins;
+}
+.juegos .accordion-item .accordion-body ul {
+  color: #fff;
+}
+.juegos .accordion-item .accordion-body ul li {
+  margin-top: 15px;
+  list-style: disc;
+}
+
 .main-pj .contenedor {
   max-width: auto;
   /* Establecer el ancho máximo deseado */
@@ -523,7 +545,7 @@ main .noticias .video-container iframe {
   border: none;
   opacity: 0.7;
   transition: opacity 0.3s ease-in-out;
-  height: 60vh;
+  height: 55vh;
 }
 .arte div .card:hover {
   opacity: 1;

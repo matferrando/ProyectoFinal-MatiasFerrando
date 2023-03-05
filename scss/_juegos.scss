@@ -1,0 +1,31 @@
+.juegos {
+
+    .accordion-button {
+        color: $blanco;
+        font-size: 3vh;
+        background-color: rgba(87, 38, 38, 0.068);
+        border: none;
+    }
+
+    .accordion-item {
+        text-align: justify;
+        background-color: rgba(28, 5, 5, 0.077);
+        margin: 0 90px;
+
+        .accordion-body {
+            font-family: poppins;
+
+            ul {
+                color: $blanco;
+
+                li {
+                    margin-top: 15px;
+                    list-style: disc;
+                }
+            }
+
+            ;
+        }
+
+    }
+}
