@@ -1,0 +1,52 @@
+.arte {
+
+    div {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 25px auto;
+
+        h2 {
+            @include titulo-h2;
+        }
+
+        .card {
+            @include sombra-foto;
+            background-color: rgba(86, 49, 49, 0.189);
+            border: none;
+            opacity: 0.7;
+            transition: opacity 0.3s ease-in-out;
+            height: 60vh;   
+
+            &:hover {
+                opacity: 1;
+            }
+            @media screen and (max-width:992px) {
+                opacity: 1;
+            }
+
+
+            .card-img-top {
+                height: 250px;
+                object-fit: cover;
+            }
+
+            .card-text {
+                color: $blanco;
+                font-size: 1rem;
+                span {
+                    color: $colorsh;
+                }
+            }
+        }
+
+    }
+
+    .video {
+        display: flex;
+        iframe {
+        @include sombra-foto;
+        }
+    }
+
+}
