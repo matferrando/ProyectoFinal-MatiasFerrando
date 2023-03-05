@@ -238,6 +238,7 @@ nav .blanco li a {
 
 #check:checked ~ .nav-menu {
   height: 100vh;
+  z-index: 1;
 }
 #check:checked ~ .nav-menu li {
   display: block;
@@ -390,7 +391,7 @@ main .noticias .video-container iframe {
 .juegos .accordion-item {
   text-align: justify;
   background-color: rgba(28, 5, 5, 0.077);
-  margin: 0 90px;
+  margin: 0 6%;
 }
 .juegos .accordion-item .accordion-body {
   font-family: poppins;
